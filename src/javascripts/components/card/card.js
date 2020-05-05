@@ -1,32 +1,27 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-param-reassign */
-
+/* eslint-disable no-plusplus */
 import print from "../helpers/utils";
 import "./card.scss";
-import characterData from "../helpers/data/characterData";
+import travelData from "../helpers/data/travelData";
+
+const cityCard = () => {
+  let domstring = "";
+  const cities = travelData.getCities();
+  cities.forEach((e) => {
+    domstring += `<div class="card">
+    <img class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">${e.title}</h5>
+      <img src= "${e.imageUrl}">
+      <p class="card-text">${e.description}</p>
+        <div class="input-group">
+        <button type="button" class="btn btn-info">submit</button>
+          <textarea name="" id="" class="submit-text" cols="25" rows="8"></textarea>
+        </div>
+          </div>
+        </div>`;
+  });
 
 
-const buildCharacterCard = (character) => {
-  if (character.description === "" && character.teamId === 'team0' && character.genderId === 'gender0') {
-    character.description = '1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 1234567890  ';
-  } else if (character.genderId === "gender1" && character.teamId === 'team0' && character.description === '') {
-    character.description = 'abcde fghij klmno pqrst uvwxy z abcde fghij klmno pqrst uvwxy z abcde fghij klmno pqrst uvwxy z abcde fghij klmno pqrst uvwxy z';
-  }
-
-  const gender = character.genderId === 'gender0' ? 'girl' : 'boy';
-  let domstring = '';
-  domstring += `<div class="card" style="width: 18rem;">
-  <div class= "namediv">
-  <h5> ${character.name}</h5>
-  <img src="${character.imageUrl}" class="${gender} card-img-top" alt="...">
-  <div>
-    <p class="text">${character.description}</p>
-      </div>
-    </div>
-  </div>`;
-
-  print.printToDom("card", domstring);
+  print.printToDom("card-container", domstring);
 };
-
-
-export default { buildCharacterCard };
+export default { cityCard };

@@ -2,35 +2,28 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 .card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-grow: inherit;
-  margin: 30px;
-  background-color: #504a4a;
-  border: white solid 2px;
+display: flex;
+flex-direction:column;
+width: 15rem;
+text-align: center;
+height: auto;
+font-size: 0.7rem;
+align-items: center;
+background-color: tan;
+margin: 15px;
 }
-.card-img-top {
-  border-radius: 50%;
-  margin: 5px;
-  max-height: 250px;
-  max-width: 275px;
-}
-
-p {
-  color: #e23636;
-  text-align: center;
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
 }
 
-h5 {
-  background-color: #f78f3f;
-  text-align: center;
-  margin: auto;
+#card-container {
+justify-content: space-between;
+display: flex;
+flex-direction: row;
+width: 100%;
 }
-
-img.boy {
-  border: solid #518cca 5px;
-}
-.girl {
-  border: solid pink 5px;
+button {
+    height: 75%;
 }
