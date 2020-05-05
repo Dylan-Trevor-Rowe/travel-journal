@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+.logonav {
+  width: 8rem;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Carter One", cursive;
+}
+
+button {
+  width: 95px;
+  height: 35px;
+  margin: 10px;
+  background-color: blue;
+}
+.hidden {
+  margin-left: 500px;
+  height: 250px;
+}
+
+#otherimage {
+  display: show;
+}
