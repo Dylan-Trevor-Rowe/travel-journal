@@ -9,9 +9,6 @@ const init = () => {
     const myTitle = $(e.target).parent().parent().find('.card-title');
     const myText = $(e.target).parent().find('.submit-text');
     diary.buildDiaryEntry(myTitle.text(), myText.val());
-    console.log(myTitle.text());
-    console.log(e);
-    console.log(myText.val());
   });
 };
 init();

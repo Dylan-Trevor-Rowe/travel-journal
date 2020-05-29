@@ -2,50 +2,50 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 .card {
-display: flex;
-flex-direction:column;
-width: 15rem;
-text-align: center;
-height: auto;
-font-size: 0.7rem;
-align-items: center;
-background-color: tan;
-margin: 15px;
-box-shadow: black 10px;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  text-align: center;
+  height: auto;
+  font-size: 0.7rem;
+  align-items: center;
+  background-color:rgb(190, 116, 88);
+  margin: 15px;
+  box-shadow: black 10px;
+
 }
 img {
-    width: 159.7px;
-    height: 106.48px;
-    border-radius: 50%;
+  width: 159.7px;
+  height: 106.48px;
+  border-radius: 50%;
 }
 
 #card-container {
-justify-content: space-between;
-display: flex;
-flex-direction: row;
-width: 100%;
-background-color: tan;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: tan;
 }
 button {
-    height: 75%;
-    background-color: #428BCA;
-    padding: 2px;
-    border-radius: 0.4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    float: right 100px;
-    
+  height: 75%;
+  background-color: #428bca;
+  padding: 2px;
+  border-radius: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-padding-top: 15px;    
+  padding-top: 15px;
 }
 
 .card-img-top {
-    height: auto;
+  height: auto;
 }
 textarea {
-    padding: auto;
+  padding: auto;
 }
 .backgrround-color {
-    background-color: rgb(190, 116, 88);
+  background-color: rgb(190, 116, 88);
+ 
 }
