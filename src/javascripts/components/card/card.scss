@@ -1,9 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-
+#card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 15rem;
   text-align: center;
   height: auto;

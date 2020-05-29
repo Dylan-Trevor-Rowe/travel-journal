@@ -15,8 +15,8 @@ const cityCard = () => {
       <img src= "${e.imageUrl}">
       <p class="card-text">${e.description}</p>
         <div class="input-group">
-          <button type="button" class="submit">submit</button>
-          <textarea name="" id="" class="submit-text" cols="25" rows="8"></textarea>
+          <button type="button" id ="submit"class="submit">submit</button>
+          <textarea type="text" name="" id="texting" class="submit-text" cols="25" rows="8"></textarea>
         </div>
         </div>
           </div>
